@@ -31,6 +31,7 @@ public abstract class Vehicle implements VehicleOperations {
 
         Vehicle vehicle = (Vehicle) o;
 
+        if (registrationNumber != vehicle.registrationNumber) return false;
         if (numberOfWheels != vehicle.numberOfWheels) return false;
         if (numberOfSeats != vehicle.numberOfSeats) return false;
         if (maxSpeed != vehicle.maxSpeed) return false;
